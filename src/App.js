@@ -11,7 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import 'animate.css';
 
 function App() {
-  const [showProjects, setShowProjects] = useState(true);
+  const [showProjects, setShowProjects] = useState(false);
   const [showSkills,setShowSkills] = useState(false);
   const [showProjectDisplayer, setShowProjectDisplayer] = useState(false);
   
