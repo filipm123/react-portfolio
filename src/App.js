@@ -75,8 +75,8 @@ function App() {
             {showProjects && (
                
               <div className='item-container'>
-                <span onClick={handleProjectDisplayClick} style={{cursor:'grab'}} className='item'><div>Github flavoured markdown preview</div><div style={{display:'flex', justifyContent:'center',}}><TiArrowRight className='arrow' /></div></span>
-                <span onClick={handleProjectDisplayClick} style={{cursor:'grab'}} className='item'><div>Random quote generator</div><div style={{display:'flex', justifyContent:'center',}}><TiArrowRight className='arrow' /></div></span>
+                <span onClick={handleProjectDisplayClick} style={{cursor:'grab'}} className='item'><div><b>Github flavoured markdown preview</b></div><div style={{display:'flex', justifyContent:'center',}}><TiArrowRight className='arrow' /></div></span>
+                <span onClick={handleProjectDisplayClick} style={{cursor:'grab'}} className='item'><div><b>Random quote generator</b></div><div style={{display:'flex', justifyContent:'center',}}><TiArrowRight className='arrow' /></div></span>
                 
                 </div>
             )}
@@ -175,13 +175,13 @@ function App() {
         <div className='projects-displayer-container'>Projects
           <div className='item-container'> 
             
-            <div className='item' style={{padding:'30px',flexDirection:'column', backgroundColor:'rgb(228, 230, 236)',boxShadow:'none'}}>Github flavoured markdown previewer
+            <div className='item' style={{padding:'30px',flexDirection:'column', backgroundColor:'rgb(228, 230, 236)',boxShadow:'none'}}><b>Github flavoured markdown previewer</b>
             <img className='project-image' src={markdownPreviewImage} alt='img'/>
             <a rel="noreferrer" target='_blank' href='https://react-markdown-preview-theta.vercel.app/' className='live-preview-btn'>Live Preview</a>
             </div>
 
 
-            <div className='item' style={{padding:'30px',flexDirection:'column', backgroundColor:'rgb(228, 230, 236)',boxShadow:'none'}}>Random quote generator
+            <div className='item' style={{padding:'30px',flexDirection:'column', backgroundColor:'rgb(228, 230, 236)',boxShadow:'none'}}><b>Random quote generator</b>
             <img className='project-image' src={quoteGeneratorImage} alt='img'/>
             <a rel="noreferrer" target='_blank' href='https://react-randomquote-generator.vercel.app/' className='live-preview-btn'>Live Preview</a>
             </div>
