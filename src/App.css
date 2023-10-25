@@ -24,6 +24,42 @@ body{
 
 }
 
+.box {
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+  align-items: center;
+  justify-content:center ;
+}
+.navbar-container {
+  background-color: #f8fafc;
+  display:flex;
+  align-items: center;
+  border-radius:15px;
+  padding:20px;
+  width:25vw;
+  
+  
+}
+.navbar {
+  display:flex;
+  align-items: center;
+  justify-content:center;
+}
+
+a {
+
+  display:flex;
+  color: rgb(36, 36, 36);
+  transition: all 0.2s ease;
+
+}
+
+a:hover {
+  color:rgb(67, 67, 67)
+}
+
+
 
 
 .info-container {
@@ -124,18 +160,17 @@ body{
 }
 
 .item-container{
-  margin-top:10px;
   display:flex;
   flex-direction: column;
   justify-content: center;
   padding:20px;
+  gap:22px;
 }
 .item {
   display:flex;
   justify-content: space-between;
   align-items: center;
   background-color: #f8fafc;
-  margin-top:15px;
   padding:20px;
   border-radius: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  
@@ -160,15 +195,19 @@ body{
 
 .live-preview-btn {
   padding:20px;
-  
   text-align: center;
-  background-color: rgb(128, 128, 253);
-  color:rgb(0, 0, 82);
-  margin-top:30px;
-  border-radius:15px;
+  font-size:23px;
+  background-color: rgb(36, 36, 36);
+  color:#f8fafc;
+  margin-top:20px;
+  border-radius:10px;
   transition:all 0.2s ease;
   cursor:grab;
   text-decoration: none;
+  width:92%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 
 }
 .live-preview-btn:hover {
@@ -177,9 +216,10 @@ body{
 }
 
 .project-image{
-  width:500px;
-  height:400px;
-  margin-top:20px;
+  width:400px;
+  height:300px;
+  margin-top:26px;
+  margin-bottom:20px;
   border-radius:15px;
   /* From https://css.glass */
   background: rgba(0, 0, 0, 0.18);
