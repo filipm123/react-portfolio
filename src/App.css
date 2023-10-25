@@ -3,25 +3,41 @@ body{
   display:flex;
   justify-content: center;
   align-items: center;
-  background-color: #cbd5e1;
+  background-color: #191919;
   font-family: 'Lexend';
-
+  height:100vh;
+}
+a {
+  text-decoration: none;;
 }
 #root {
+  position: relative;
   display:flex;
-  justify-content: center;
-  align-items: center;
-  margin-top:75px;
-
+  flex-direction: column;
+  gap:10px;
+  padding:10px;
+  margin-top:20px;
+  max-width: 100%; /* Ensure the container doesn't exceed the screen width */
+  max-height: 100%; /* Ensure the container doesn't exceed the screen height */
 }
 .hide-element{
   display:none;
 }
 
 .portfolio-container {
+  
   display:flex;
   gap:40px;
+  resize: both;
 
+
+ 
+}
+button {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap:5px;
 }
 
 .box {
@@ -30,21 +46,19 @@ body{
   gap:10px;
   align-items: center;
   justify-content:center ;
+  
 }
 .navbar-container {
   background-color: #f8fafc;
   display:flex;
-  align-items: center;
   border-radius:15px;
-  padding:20px;
-  width:25vw;
-  
+  padding:10px;
   
 }
 .navbar {
   display:flex;
-  align-items: center;
-  justify-content:center;
+  font-size:24px;
+
 }
 
 a {
@@ -97,13 +111,14 @@ a:hover {
   font-size:34px;
   padding:10px;
   margin-top:45px;
-  line-height:28px;
+  line-height:32px;
 }
 .avatar{
   height:130px;
   width:130px;
   border-radius: 50%;
   margin-top:70px;
+  padding-right:10px;
 }
 
 .copy-email-btn {
@@ -238,7 +253,7 @@ a:hover {
 }
 
 
-@media only screen and (max-width: 1320px) {
+@media only screen and (max-width: 1200px) {
 .portfolio-container {
   flex-direction: column;
 }
@@ -256,6 +271,7 @@ a:hover {
 }
 .avatar{
   margin-top:0;
+  padding-right:0px;
   margin-bottom:20px;
 }
 .arrow {
@@ -268,6 +284,17 @@ a:hover {
 .project-image {
   width:90%;
   height:30%;
+}
+.avatar-buttons{
+  gap:10px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.copy-email-btn{
+  margin:auto;
+  width:120px;
 }
 }
 
