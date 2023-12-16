@@ -29,17 +29,15 @@ function App() {
 
   const handleClickProjects = () => {
     setShowProjects(!showProjects);
-
   };
   const handleClickSkills = () => {
     setShowSkills(!showSkills);
   };
   const handleProjectDisplayClick = () => {
-    ref.current?.scrollIntoView({behavior:'smooth'});
+    ref.current?.scrollIntoView({ behavior: "smooth" });
     setShowProjectDisplayer(!showProjectDisplayer);
-  
   };
-  
+
   return (
     <div className="portfolio-container">
       <div className="info-container">
@@ -65,14 +63,14 @@ function App() {
           </div>
           <img className="avatar" src={avatar} alt="Avatar"></img>
         </div>
-        <span className='avatar-buttons'style={{display:'flex'}}>
+        <span className="avatar-buttons" style={{ display: "flex" }}>
           <button onClick={handleEmailCopy} className="copy-email-btn">
             <TiClipboard /> Copy Email
           </button>
           <ToastContainer autoClose={2000} />
           <a href="https://github.com/filipm123">
             <button className="copy-email-btn">
-              <TiSocialGithubCircular />  Github
+              <TiSocialGithubCircular /> Github
             </button>
           </a>
         </span>
@@ -98,6 +96,16 @@ function App() {
           </div>
           {showProjects && (
             <div className="item-container">
+              <span
+                onClick={handleProjectDisplayClick}
+                style={{ cursor: "grab" }}
+                className="item"
+              >
+                <div>Bums: an work in progress music album helper</div>
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  <TiArrowRight className="arrow" />
+                </div>
+              </span>
               <span
                 onClick={handleProjectDisplayClick}
                 style={{ cursor: "grab" }}
@@ -201,6 +209,47 @@ function App() {
         <div className="animate__animated animate__fadeInLeft">
           <div ref={ref} className="projects-displayer-container">
             <div className="item-container">
+              <div
+                className="item"
+                style={{
+                  padding: "30px",
+                  flexDirection: "column",
+                  backgroundColor: "rgb(228, 230, 236)",
+                  boxShadow: "none",
+                }}
+              >
+                <b className="projectName">Bums</b>
+                <span className="item">
+                  <div
+                    style={{ width: "408px" }}
+                    className="language-icon-text"
+                  >
+                    Bums is a full-stack web application using React,
+                    TailwindCSS, Next.js and Firebase.
+                    <br></br>
+                    <br></br>
+                    This app uses Firebase Authentication, every authenticated
+                    user can create an album whose data is stored on the
+                    Firebase Firestore.
+                    <br></br>
+                    <br></br>
+                    Artists can also add notes "wip" and upload audio files for
+                    created album tracks. 
+                    <br></br>
+                    <br></br>
+                    Bums allows artists to easily manage
+                    work in progress albums by keeping everything organized.
+                  </div>
+                </span>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://bums.vercel.app/"
+                  className="live-preview-btn"
+                >
+                  <TiSocialGithubCircular /> Live Preview
+                </a>
+              </div>
               <div
                 className="item"
                 style={{
