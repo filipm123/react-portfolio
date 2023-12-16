@@ -101,7 +101,7 @@ function App() {
                 style={{ cursor: "grab" }}
                 className="item"
               >
-                <div>Bums: an work in progress music album helper</div>
+                <div>Bums: a work in progress music album helper</div>
                 <div style={{ display: "flex", justifyContent: "center" }}>
                   <TiArrowRight className="arrow" />
                 </div>
